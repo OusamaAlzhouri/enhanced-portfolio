@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+.hero {
+    background-color: #e0e0e0;
+    padding: 5em 2em;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    animation: fadeIn 1s ease-in-out; /* Example Animation */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.about, .contact, .random-data {
+    padding: 3em 2em;
+    margin-bottom: 2em;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.about h2, .contact h2, .random-data h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group .error-message {
+    display: block;
+    color: red;
+    font-size: 0.8em;
+    margin-top: 0.25em;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.5em;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .hero {
+        padding: 3em 1em;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+}
